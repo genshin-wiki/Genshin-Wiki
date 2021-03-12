@@ -4,3 +4,4 @@ node_modules
 *.iml
 yarn-error*
 */.vuepress/dist
+package-lock.json
