@@ -31,7 +31,6 @@
         </table>
       </el-tab-pane>
     </el-tabs>
-    <audio id="voice-player"></audio>
   </div>
 </template>
 
@@ -50,13 +49,18 @@ export default {
   created() {
     const result = require(`../../data/char/${this.name}/voice`)
     this.data = result.default
-    this.audio = document.getElementById('voice-player')
+    if (typeof Audio != 'undefined') {
+      this.audio = new Audio()
+    }
   },
   methods: {
     play(url) {
-      this.audio.pause()
-      this.audio.src = url
-      this.audio.play()
+      if (this.audio != undefined) {
+        this.audio.src = url
+        this.audio.play()
+      } else {
+        this.$message.error('当前浏览器不支持音频播放')
+      }
     }
   }
 }

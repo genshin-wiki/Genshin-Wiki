@@ -1,5 +1,5 @@
 import Element from 'element-ui';
-import 'element-ui/lib/theme-chalk/index.css';
+import './element-theme/index.css'
 
 export default ({ Vue, options, router }) => {
   const env = process.env.NODE_ENV
