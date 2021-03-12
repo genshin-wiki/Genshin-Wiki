@@ -31,6 +31,7 @@
         </table>
       </el-tab-pane>
     </el-tabs>
+    <audio id="voice-player"></audio>
   </div>
 </template>
 
@@ -43,15 +44,17 @@ export default {
     return {
       data: [],
       activeName: '0',
-      audio: new Audio()
+      audio: undefined
     }
   },
   created() {
     const result = require(`../../data/char/${this.name}/voice`)
     this.data = result.default
+    this.audio = document.getElementById('voice-player')
   },
   methods: {
     play(url) {
+      this.audio.pause()
       this.audio.src = url
       this.audio.play()
     }
