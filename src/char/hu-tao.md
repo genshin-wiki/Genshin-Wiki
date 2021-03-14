@@ -1,7 +1,7 @@
 ---
 title: 胡桃
 categories:
- - 角色
+  - 角色
 ---
 
 ## 信息
@@ -11,6 +11,10 @@ categories:
 ## 图片
 
 <char-image name="hu-tao"/>
+
+## 天赋
+
+<char-talent name="hu-tao"/>
 
 ## 故事
 

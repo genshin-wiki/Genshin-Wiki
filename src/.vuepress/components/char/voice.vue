@@ -1,34 +1,9 @@
 <template>
   <div>
     <el-tabs v-model="activeName">
-      <el-tab-pane v-for="(item, key) in data" :label="item.title" :key="key" :name="`${key}`">
-        <span>{{ item.text }}</span>
-        <table class="char-voice-table">
-          <tbody>
-            <tr>
-              <th class="char-voice-th">语言</th>
-              <th>汉语</th>
-              <th>日语</th>
-              <th>英语</th>
-              <td>韩语</td>
-            </tr>
-            <tr>
-              <th class="char-voice-th">播放</th>
-              <td>
-                <el-button type="primary" @click="play($baseURL + item.voice.cn)">播放</el-button>
-              </td>
-              <td>
-                <el-button type="primary" @click="play($baseURL + item.voice.jp)">播放</el-button>
-              </td>
-              <td>
-                <el-button type="primary" @click="play($baseURL + item.voice.en)">播放</el-button>
-              </td>
-              <td>
-                <el-button type="primary" @click="play($baseURL + item.voice.kr)">播放</el-button>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+      <el-tab-pane v-for="(item, key) in data" :label="item.title" :key="'char-voice-' + key" :name="'char-voice-' + key">
+        <span>{{ item.content }}</span>
+        <char-voice-player @play="play" @pause="pause" :voice="item.voice" />
       </el-tab-pane>
     </el-tabs>
   </div>
@@ -42,7 +17,7 @@ export default {
   data() {
     return {
       data: [],
-      activeName: '0',
+      activeName: 'char-voice-0',
       audio: undefined
     }
   },
@@ -61,15 +36,16 @@ export default {
       } else {
         this.$message.error('当前浏览器不支持音频播放')
       }
+    },
+    pause() {
+      if (this.audio != undefined) {
+        this.audio.pause()
+      } else {
+        this.$message.error('当前浏览器不支持音频播放')
+      }
     }
   }
 }
 </script>
 
-<style lang="stylus">
-.char-voice-table
-  table-layout: fixed
-  min-width: 100%
-.char-voice-th
-  min-width: 36px
-</style>
+<style lang="stylus" scoped></style>

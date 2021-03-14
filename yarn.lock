@@ -819,7 +819,14 @@
     "@babel/types" "^7.4.4"
     esutils "^2.0.2"
 
-"@babel/runtime@^7.10.2", "@babel/runtime@^7.11.0", "@babel/runtime@^7.8.4":
+"@babel/runtime@^7.10.2":
+  version "7.13.10"
+  resolved "https://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.13.10.tgz?cache=0&sync_timestamp=1615243322559&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fruntime%2Fdownload%2F%40babel%2Fruntime-7.13.10.tgz#47d42a57b6095f4468da440388fdbad8bebf0d7d"
+  integrity sha1-R9QqV7YJX0Ro2kQDiP262L6/DX0=
+  dependencies:
+    regenerator-runtime "^0.13.4"
+
+"@babel/runtime@^7.11.0", "@babel/runtime@^7.8.4":
   version "7.13.9"
   resolved "https://registry.npm.taobao.org/@babel/runtime/download/@babel/runtime-7.13.9.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40babel%2Fruntime%2Fdownload%2F%40babel%2Fruntime-7.13.9.tgz#97dbe2116e2630c489f22e0656decd60aaa1fcee"
   integrity sha1-l9viEW4mMMSJ8i4GVt7NYKqh/O4=
@@ -1180,9 +1187,9 @@
     prettier "^1.18.2"
 
 "@vue/composition-api@^1.0.0-beta.20":
-  version "1.0.0-rc.3"
-  resolved "https://registry.npm.taobao.org/@vue/composition-api/download/@vue/composition-api-1.0.0-rc.3.tgz?cache=0&sync_timestamp=1614751714656&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vue%2Fcomposition-api%2Fdownload%2F%40vue%2Fcomposition-api-1.0.0-rc.3.tgz#5174632fdda888f4f04bbaa5263cf01e34ba3fc2"
-  integrity sha1-UXRjL92oiPTwS7qlJjzwHjS6P8I=
+  version "1.0.0-rc.5"
+  resolved "https://registry.npm.taobao.org/@vue/composition-api/download/@vue/composition-api-1.0.0-rc.5.tgz?cache=0&sync_timestamp=1615458918070&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2F%40vue%2Fcomposition-api%2Fdownload%2F%40vue%2Fcomposition-api-1.0.0-rc.5.tgz#9b857743dd2692073b6df90fa2cfb9a75a1bb2f6"
+  integrity sha1-m4V3Q90mkgc7bfkPos+5p1obsvY=
   dependencies:
     tslib "^2.1.0"
 
@@ -8027,7 +8034,7 @@ unbox-primitive@^1.0.0:
 
 underscore@^1.8.3:
   version "1.12.0"
-  resolved "https://registry.npm.taobao.org/underscore/download/underscore-1.12.0.tgz?cache=0&sync_timestamp=1606179554177&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Funderscore%2Fdownload%2Funderscore-1.12.0.tgz#4814940551fc80587cef7840d1ebb0f16453be97"
+  resolved "https://registry.npm.taobao.org/underscore/download/underscore-1.12.0.tgz?cache=0&sync_timestamp=1615507684904&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Funderscore%2Fdownload%2Funderscore-1.12.0.tgz#4814940551fc80587cef7840d1ebb0f16453be97"
   integrity sha1-SBSUBVH8gFh873hA0euw8WRTvpc=
 
 unicode-canonical-property-names-ecmascript@^1.0.4:
@@ -8306,7 +8313,7 @@ vue-click-outside@1.1.0:
 
 vue-demi@^0.5.3:
   version "0.5.4"
-  resolved "https://registry.npm.taobao.org/vue-demi/download/vue-demi-0.5.4.tgz?cache=0&sync_timestamp=1614592148531&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-demi%2Fdownload%2Fvue-demi-0.5.4.tgz#cedb887af819ff0126c545a5540170d8895b816d"
+  resolved "https://registry.npm.taobao.org/vue-demi/download/vue-demi-0.5.4.tgz#cedb887af819ff0126c545a5540170d8895b816d"
   integrity sha1-ztuIevgZ/wEmxUWlVAFw2IlbgW0=
 
 vue-disqus@^3.0.5:
@@ -8320,9 +8327,9 @@ vue-hot-reload-api@^2.3.0:
   integrity sha1-UylVzB6yCKPZkLOp+acFdGV+CPI=
 
 vue-i18n@^8.11.2:
-  version "8.23.0"
-  resolved "https://registry.npm.taobao.org/vue-i18n/download/vue-i18n-8.23.0.tgz?cache=0&sync_timestamp=1614439745721&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-i18n%2Fdownload%2Fvue-i18n-8.23.0.tgz#4a65681a1dfe716d47e1d00ddbd6e0b88ea36735"
-  integrity sha1-SmVoGh3+cW1H4dAN29bguI6jZzU=
+  version "8.24.1"
+  resolved "https://registry.npm.taobao.org/vue-i18n/download/vue-i18n-8.24.1.tgz?cache=0&sync_timestamp=1615457680836&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-i18n%2Fdownload%2Fvue-i18n-8.24.1.tgz#c3582bd61bb3a978f00c75e1ac850efc89b3916f"
+  integrity sha1-w1gr1huzqXjwDHXhrIUO/ImzkW8=
 
 vue-loader@^15.7.1:
   version "15.9.6"

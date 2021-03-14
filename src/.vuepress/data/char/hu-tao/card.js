@@ -1,7 +1,7 @@
 // 角色资料卡数据
 
 export default {
-    avatar: '/image/char/avatar/hu-tao.png', // 头像链接
+    avatar: '/image/char/avatar/Hutao.png', // 头像链接
     name: '胡桃', // 角色名称
     prefix: '雪霁梅香', // 角色称号
     by: '往生堂', // 所属

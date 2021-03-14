@@ -1,5 +1,6 @@
 <template>
   <div class="main">
+    <img class="char-card-avatar" :src="$baseURL + data.avatar"/>
     <table class="char-card-table">
       <tbody>
         <tr>
@@ -69,6 +70,9 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
+.char-card-avatar
+  width 180px
+  height 180px
 .char-card-table
   table-layout: fixed
   min-width: 100%
