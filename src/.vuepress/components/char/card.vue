@@ -1,50 +1,50 @@
 <template>
   <div class="main">
-    <img class="char-card-avatar" :src="$baseURL + data.avatar"/>
-    <table class="char-card-table">
+    <img class="char-card-avatar" :src="$baseURL + data.avatar" />
+    <table>
       <tbody>
         <tr>
-          <th class="char-card-th">名称</th>
+          <th>名称</th>
           <td>{{ `${data.prefix}·${data.name}` }}</td>
         </tr>
         <tr>
-          <th class="char-card-th">稀有度</th>
+          <th>稀有度</th>
           <td><el-rate v-model="data.rank" disabled /></td>
         </tr>
         <tr>
-          <th class="char-card-th">所属</th>
+          <th>所属</th>
           <td>{{ data.by }}</td>
         </tr>
         <tr>
-          <th class="char-card-th">神之眼</th>
+          <th>神之眼</th>
           <td>{{ data.element }}</td>
         </tr>
         <tr>
-          <th class="char-card-th">命之座</th>
+          <th>命之座</th>
           <td>{{ data.constell }}</td>
         </tr>
         <tr>
-          <th class="char-card-th">武器类型</th>
+          <th>武器类型</th>
           <td>{{ data.weapon }}</td>
         </tr>
         <tr>
-          <th class="char-card-th">CV(中)</th>
+          <th>CV(中)</th>
           <td>{{ data.cv.cn }}</td>
         </tr>
         <tr>
-          <th class="char-card-th">CV(日)</th>
+          <th>CV(日)</th>
           <td>{{ data.cv.jp }}</td>
         </tr>
         <tr>
-          <th class="char-card-th">CV(英)</th>
+          <th>CV(英)</th>
           <td>{{ data.cv.en }}</td>
         </tr>
         <tr>
-          <th class="char-card-th">CV(韩)</th>
+          <th>CV(韩)</th>
           <td>{{ data.cv.kr }}</td>
         </tr>
         <tr>
-          <th class="char-card-th">简介</th>
+          <th>简介</th>
           <td>{{ data.desc }}</td>
         </tr>
       </tbody>
@@ -73,9 +73,4 @@ export default {
 .char-card-avatar
   width 180px
   height 180px
-.char-card-table
-  table-layout: fixed
-  min-width: 100%
-.char-card-th
-  min-width: 60px
 </style>

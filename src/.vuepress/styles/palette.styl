@@ -4,8 +4,23 @@ $accentColor = #0088ff;
     color: unset;
 }
 
+table {
+    text-align: center;
+    user-select: none;
+}
+
 table tr:nth-child(2n) {
     background-color: unset;
+}
+
+table td {
+    word-break: keep-all;
+    white-space: nowrap;
+}
+
+table th {
+    word-break: keep-all;
+    white-space: nowrap;
 }
 
 .content__default:not(.custom) > h2 {

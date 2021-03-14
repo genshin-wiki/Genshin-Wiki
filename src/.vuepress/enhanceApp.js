@@ -11,6 +11,19 @@ export default ({ Vue, options, router }) => {
   }
 
   Vue.use(Element);
+  Vue.directive('table-drag', {
+    inserted: function (el) {
+      const table = el.querySelector('table')
+      el.onmousewheel = function (e) {
+        if (e.wheelDelta > 0) {
+          table.scrollLeft -= 50
+        } else {
+          table.scrollLeft += 50
+        }
+        return false
+      }
+    }
+  })
   console.log('====================================');
   console.log('Genshin Wiki By ZhenXin');
   console.log('Github: https://github.com/Genshin-Wiki/Genshin-Wiki');

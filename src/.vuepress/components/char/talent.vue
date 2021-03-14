@@ -4,7 +4,7 @@
       <el-tab-pane v-for="(item, key) in data" :label="item.title" :key="'char-talent-' + key" :name="'char-talent-' + key">
         <!-- <img :src="$baseURL + item.image" /> -->
         <div class="char-talent-desc" v-for="(desc, descKey) in item.desc" :key="'char-talent-desc-' + descKey" v-html="getDesc(desc)"></div>
-        <char-talent-table :data="item.data" />
+        <char-talent-table v-if="item.data != null" :data="item.data" />
       </el-tab-pane>
     </el-tabs>
   </div>

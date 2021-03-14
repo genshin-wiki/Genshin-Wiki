@@ -1,5 +1,5 @@
 <template>
-  <table class="char-voice-player">
+  <table>
     <tbody>
       <tr>
         <th>汉语</th>
@@ -73,10 +73,6 @@ export default {
 </script>
 
 <style lang="stylus" scoped>
-.char-voice-player
-  table-layout: fixed
-  min-width: 100%
-  text-align center
 .char-voice-play-button
   cursor pointer
   font-size 26px

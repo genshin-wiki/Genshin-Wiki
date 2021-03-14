@@ -4,11 +4,11 @@
       <el-button type="text" @click="handleClick">点击 {{ tableStatus.text }} 详细数据</el-button>
     </div>
     <el-collapse-transition>
-      <div class="char-talent-table-box" v-show="tableStatus.display">
-        <table class="char-talent-table">
+      <div v-show="tableStatus.display" v-table-drag>
+        <table>
           <tbody>
             <tr>
-              <th class="char-talent-th"></th>
+              <th></th>
               <th>Lv.1</th>
               <th>Lv.2</th>
               <th>Lv.3</th>
@@ -31,6 +31,7 @@
             </tr>
           </tbody>
         </table>
+        <span>注: 以上数据仅供参考，请以游戏内为准。</span>
       </div>
     </el-collapse-transition>
   </div>
@@ -62,14 +63,4 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-.char-talent-table-box
-  margin-top 10px
-.char-talent-table
-  text-align center
-  table-layout: fixed
-  min-width: 100%
-  user-select none
-.char-talent-th
-  min-width: 160px
-</style>
+<style lang="stylus" scoped></style>
