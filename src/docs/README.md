@@ -1,5 +1,7 @@
 ---
 title: 帮助文档
+description: '原神百科帮助文档'
+image: '/image/logo.png'
 ---
 
 ## 克隆项目

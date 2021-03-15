@@ -1,10 +1,9 @@
+const moment = require('moment')
 module.exports = {
   title: '原神百科',
   port: 8848,
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
-    ['meta', { name: 'keywords', content: '原神,原神百科,Genshin,Genshin Wiki,米哈游,mihoyo,崩坏3,崩坏学园2,未定事件簿,米游社' }],
-    ['meta', { name: 'description', content: '原神百科 - 使用vuepress搭建的现代化Wiki程序 提供原神的相关资料 角色 武器 圣遗物等 Github: https://github.com/Genshin-Wiki/Genshin-Wiki' }],
     ['script', { src: 'https://cdn.zhenxin.xyz/static/js/autoGray.js' }]
   ],
   locales: {
@@ -31,7 +30,61 @@ module.exports = {
       { text: 'Github', link: 'https://github.com/Genshin-Wiki/Genshin-Wiki', icon: 'reco-github' },
     ]
   },
-  chainWebpack(config) {
-    config.resolve.alias.set('core-js/library/fn', 'core-js/features');
-  }
+  plugins: [
+    [
+      require('../../plugin/live2d')
+    ],
+    [
+      '@vuepress/last-updated',
+      {
+        transformer: (timestamp) => {
+          return moment(timestamp).format('YYYY/MM/DD HH:mm:ss')
+        }
+      }
+    ],
+    [
+      'dynamic-title',
+      {
+        showText: '(/≧▽≦/)咦！又好了！',
+        hideText: '(●—●)喔哟，崩溃啦！',
+        recoverTime: 2000,
+      }
+    ],
+    [
+      'sitemap',
+      {
+        hostname: 'https://ys.zhenxin.xyz'
+      }
+    ],
+    [
+      'seo',
+      {
+        siteTitle: (_, $site) => $site.title,
+        title: $page => $page.title,
+        description: $page => $page.regularPath == '/' ? null : $page.frontmatter.description,
+        twitterCard: _ => 'summary_large_image',
+        type: $page => $page.regularPath == '/' ? 'website' : 'article',
+        url: $page => 'https://ys.zhenxin.xyz' + $page.regularPath,
+        image: $page => 'https://static.ys.zhenxin.xyz' + $page.frontmatter.image,
+        customMeta: (add, context) => {
+          const { $page } = context
+          const categories = $page.frontmatter.categories
+          const title = $page.title
+          const keywords = $page.frontmatter.keywords
+          let result = '原神wiki,原神攻略,原神资料,原神,原神百科,Genshin,Genshin Wiki,'
+          if (categories) {
+            result = result + categories + ','
+          }
+          if (title) {
+            result = result + title + ','
+          }
+          if (keywords) {
+            result = result + keywords + ','
+          }
+          result = result.substr(0, result.length - 1)
+          add('keywords', result)
+        }
+      }
+    ]
+  ]
 }
