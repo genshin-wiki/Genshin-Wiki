@@ -7,7 +7,6 @@
 <script>
 export default {
   mounted() {
-    window.baseURL = this.$baseURL
     this.init()
     this.$router.afterEach((to, from) => {
       if (to.path !== from.path) {
