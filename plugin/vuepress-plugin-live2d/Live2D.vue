@@ -15,11 +15,6 @@ export default {
     this.isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
     if (!this.isMobile) {
       this.init()
-      this.$router.afterEach((to, from) => {
-        if (to.path !== from.path) {
-          this.init()
-        }
-      })
     }
   },
   methods: {
