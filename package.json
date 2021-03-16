@@ -13,6 +13,8 @@
     "async-validator": "1.11.5",
     "element-ui": "^2.15.1",
     "moment": "^2.29.1",
+    "node-sass": "4.14.1",
+    "sass-loader": "8.0.0",
     "vuepress": "^1.8.2",
     "vuepress-plugin-dynamic-title": "^1.0.0",
     "vuepress-plugin-seo": "^0.1.4",

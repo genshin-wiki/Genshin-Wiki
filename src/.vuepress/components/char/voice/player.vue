@@ -72,8 +72,9 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-.char-voice-play-button
-  cursor pointer
-  font-size 26px
+<style lang="scss" scoped>
+.char-voice-play-button {
+  cursor: pointer;
+  font-size: 26px;
+}
 </style>

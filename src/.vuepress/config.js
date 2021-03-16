@@ -32,7 +32,7 @@ module.exports = {
   },
   plugins: [
     [
-      require('../../plugin/live2d')
+      require('../../plugin/vuepress-plugin-live2d')
     ],
     [
       '@vuepress/last-updated',

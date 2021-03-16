@@ -2,6 +2,9 @@
 title: 胡桃
 categories:
   - 角色
+  - 璃月港
+  - 火
+  - 五星
 keywords:
   - 往生堂
   - 送走
@@ -20,20 +23,20 @@ image: '/image/char/avatar/Hutao.png'
 
 ## 信息
 
-<char-card name="hu-tao"/>
+<char-card name="hutao"/>
 
 ## 图片
 
-<char-image name="hu-tao"/>
+<char-image name="hutao"/>
 
 ## 天赋
 
-<char-talent name="hu-tao"/>
+<char-talent name="hutao"/>
 
 ## 故事
 
-<char-story name="hu-tao"/>
+<char-story name="hutao"/>
 
 ## 语音
 
-<char-voice name="hu-tao"/>
+<char-voice name="hutao"/>

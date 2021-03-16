@@ -119,14 +119,16 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
+<style lang="scss" scoped>
 table td {
-    word-break: unset;
-    white-space: unset;
+  word-break: unset;
+  white-space: unset;
 }
-.char-card-table
-  text-align unset
-.char-card-avatar
-  width 180px
-  height 180px
+.char-card-table {
+  text-align: unset;
+}
+.char-card-avatar {
+  width: 180px;
+  height: 180px;
+}
 </style>

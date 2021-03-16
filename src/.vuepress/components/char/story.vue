@@ -63,7 +63,8 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-.char-story-text
-    line-height: 20px
+<style lang="scss" scoped>
+.char-story-text {
+  line-height: 20px;
+}
 </style>
