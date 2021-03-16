@@ -11,10 +11,8 @@ export default {
       isMobile: true
     }
   },
-  created() {
-    console.log(this.isMobile)
+  beforeMount() {
     this.isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
-    console.log(this.isMobile)
   },
   mounted() {
     if (!this.isMobile) {
