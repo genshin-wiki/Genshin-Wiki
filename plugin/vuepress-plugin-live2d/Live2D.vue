@@ -1,18 +1,30 @@
 <template>
-  <div id="landlord">
-    <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+  <div v-if="!isMobile" class="live2d-box">
+    <canvas id="live2d" width="280" height="250" />
   </div>
 </template>
 
 <script>
 export default {
+  data() {
+    return {
+      isMobile: true
+    }
+  },
+  created() {
+    console.log(this.isMobile)
+    this.isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+    console.log(this.isMobile)
+  },
   mounted() {
-    this.init()
-    this.$router.afterEach((to, from) => {
-      if (to.path !== from.path) {
-        this.init()
-      }
-    })
+    if (!this.isMobile) {
+      this.init()
+      this.$router.afterEach((to, from) => {
+        if (to.path !== from.path) {
+          this.init()
+        }
+      })
+    }
   },
   methods: {
     init() {
@@ -27,6 +39,14 @@ export default {
 }
 </script>
 
-<style lang="stylus">
-@import './live2d.css'
+<style lang="scss">
+.live2d-box {
+  pointer-events: none;
+  position: fixed;
+  bottom: 2%;
+  right: 0px;
+  > canvas {
+    position: relative;
+  }
+}
 </style>

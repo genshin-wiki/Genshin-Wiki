@@ -88,7 +88,7 @@ export default {
   }
   /deep/ .cyro {
     @extend .base;
-    color: #4bffff;
+    color: #4be1ff;
   }
   /deep/ .ameno {
     @extend .base;
