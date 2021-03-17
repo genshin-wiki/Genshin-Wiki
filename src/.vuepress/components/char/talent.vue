@@ -63,34 +63,35 @@ export default {
 }
 .char-talent-desc {
   margin-bottom: 10px;
-  /deep/ .base {
+
+  ::v-deep .base {
     font-weight: bold;
   }
-  /deep/ .bold {
+  ::v-deep .bold {
     @extend .base;
     color: #ffc038;
   }
-  /deep/ .pyro {
+  ::v-deep .pyro {
     @extend .base;
     color: #ff4b4b;
   }
-  /deep/ .hydro {
+  ::v-deep .hydro {
     @extend .base;
     color: #389cff;
   }
-  /deep/ .geo {
+  ::v-deep .geo {
     @extend .base;
     color: #ffd34b;
   }
-  /deep/ .electro {
+  ::v-deep .electro {
     @extend .base;
     color: #ff5bff;
   }
-  /deep/ .cyro {
+  ::v-deep .cyro {
     @extend .base;
     color: #4be1ff;
   }
-  /deep/ .ameno {
+  ::v-deep .ameno {
     @extend .base;
     color: #38ffc0;
   }
