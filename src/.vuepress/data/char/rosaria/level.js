@@ -4,26 +4,26 @@ export default {
   lv20: {
     item: [ // 物品列表
       {
-        name: '燃愿玛瑙碎屑', // 物品名称
-        image: '/image/item/燃愿玛瑙碎屑.png', // 物品图片
+        name: '哀叙冰玉碎屑', // 物品名称
+        image: '/image/item/哀叙冰玉碎屑.png', // 物品图片
         rank: 2, // 物品星级
         count: 1 // 物品数量
       },
       {
-        name: '夜泊石',
-        image: '/image/item/夜泊石.png',
+        name: '落落莓',
+        image: '/image/item/落落莓.png',
         rank: 1,
         count: 3
       },
       {
-        name: '寻宝鸦印',
-        image: '/image/item/寻宝鸦印.png',
+        name: '新兵的徽记',
+        image: '/image/item/新兵的徽记.png',
         rank: 1,
         count: 3
       }
     ],
     unlock: [ // 解锁天赋
-      '关联条款'
+      '聆听忏悔的幽影'
     ],
     attributes: [ // 属性
       {
@@ -32,37 +32,37 @@ export default {
       },
       {
         name: '生命值',
-        value: 2600
+        value: 3417
       },
       {
         name: '防御力',
-        value: 163
+        value: 197
       }
     ]
   },
   lv40: {
     item: [
       {
-        name: '燃愿玛瑙断片',
-        image: '/image/item/燃愿玛瑙断片.png',
+        name: '哀叙冰玉断片',
+        image: '/image/item/哀叙冰玉断片.png',
         rank: 3,
         count: 3
       },
       {
-        name: '未熟之玉',
-        image: '/image/item/未熟之玉.png',
+        name: '极寒之核',
+        image: '/image/item/极寒之核.png',
         rank: 4,
         count: 2
       },
       {
-        name: '夜泊石',
-        image: '/image/item/夜泊石.png',
+        name: '落落莓',
+        image: '/image/item/落落莓.png',
         rank: 1,
         count: 10
       },
       {
-        name: '寻宝鸦印',
-        image: '/image/item/寻宝鸦印.png',
+        name: '新兵的徽记',
+        image: '/image/item/新兵的徽记.png',
         rank: 1,
         count: 15
       }
@@ -75,14 +75,14 @@ export default {
       },
       {
         name: '生命值',
-        value: 4311
+        value: 5665
       },
       {
         name: '防御力',
-        value: 271
+        value: 327
       },
       {
-        name: '火元素伤害加成',
+        name: '攻击力(百分比)',
         value: '6.0%'
       }
     ]
@@ -90,26 +90,26 @@ export default {
   lv50: {
     item: [
       {
-        name: '燃愿玛瑙断片',
-        image: '/image/item/燃愿玛瑙断片.png',
+        name: '哀叙冰玉断片',
+        image: '/image/item/哀叙冰玉断片.png',
         rank: 3,
         count: 6
       },
       {
-        name: '未熟之玉',
-        image: '/image/item/未熟之玉.png',
+        name: '极寒之核',
+        image: '/image/item/极寒之核.png',
         rank: 4,
         count: 4
       },
       {
-        name: '夜泊石',
-        image: '/image/item/夜泊石.png',
+        name: '落落莓',
+        image: '/image/item/落落莓.png',
         rank: 1,
         count: 20
       },
       {
-        name: '藏银鸦印',
-        image: '/image/item/藏银鸦印.png',
+        name: '士官的徽记',
+        image: '/image/item/士官的徽记.png',
         rank: 2,
         count: 12
       }
@@ -122,14 +122,14 @@ export default {
       },
       {
         name: '生命值',
-        value: 5514
+        value: 7245
       },
       {
         name: '防御力',
-        value: 346
+        value: 418
       },
       {
-        name: '火元素伤害加成',
+        name: '攻击力(百分比)',
         value: '12.0%'
       }
     ]
@@ -137,32 +137,32 @@ export default {
   lv60: {
     item: [
       {
-        name: '燃愿玛瑙块',
-        image: '/image/item/燃愿玛瑙块.png',
+        name: '哀叙冰玉块',
+        image: '/image/item/哀叙冰玉块.png',
         rank: 4,
         count: 3
       },
       {
-        name: '未熟之玉',
-        image: '/image/item/未熟之玉.png',
+        name: '极寒之核',
+        image: '/image/item/极寒之核.png',
         rank: 4,
         count: 8
       },
       {
-        name: '夜泊石',
-        image: '/image/item/夜泊石.png',
+        name: '落落莓',
+        image: '/image/item/落落莓.png',
         rank: 1,
         count: 30
       },
       {
-        name: '藏银鸦印',
-        image: '/image/item/藏银鸦印.png',
+        name: '士官的徽记',
+        image: '/image/item/士官的徽记.png',
         rank: 2,
         count: 18
       }
     ],
     unlock: [
-      '法兽灼眼'
+      '暗中支援的黯色'
     ],
     attributes: [
       {
@@ -171,37 +171,37 @@ export default {
       },
       {
         name: '生命值',
-        value: 6578
+        value: 8643
       },
       {
         name: '防御力',
-        value: 413
+        value: 499
       }
     ]
   },
   lv70: {
     item: [
       {
-        name: '燃愿玛瑙块',
-        image: '/image/item/燃愿玛瑙块.png',
+        name: '哀叙冰玉块',
+        image: '/image/item/哀叙冰玉块.png',
         rank: 4,
         count: 6
       },
       {
-        name: '未熟之玉',
-        image: '/image/item/未熟之玉.png',
+        name: '极寒之核',
+        image: '/image/item/极寒之核.png',
         rank: 4,
         count: 12
       },
       {
-        name: '夜泊石',
-        image: '/image/item/夜泊石.png',
+        name: '落落莓',
+        image: '/image/item/落落莓.png',
         rank: 1,
         count: 45
       },
       {
-        name: '攫金鸦印',
-        image: '/image/item/攫金鸦印.png',
+        name: '尉官的徽记',
+        image: '/image/item/尉官的徽记.png',
         rank: 3,
         count: 12
       }
@@ -214,14 +214,14 @@ export default {
       },
       {
         name: '生命值',
-        value: 7641
+        value: 10040
       },
       {
         name: '防御力',
-        value: 480
+        value: 580
       },
       {
-        name: '火元素伤害加成',
+        name: '攻击力(百分比)',
         value: '18%'
       }
     ]
@@ -229,26 +229,26 @@ export default {
   lv80: {
     item: [
       {
-        name: '燃愿玛瑙',
-        image: '/image/item/燃愿玛瑙.png',
+        name: '哀叙冰玉',
+        image: '/image/item/哀叙冰玉.png',
         rank: 5,
         count: 6
       },
       {
-        name: '未熟之玉',
-        image: '/image/item/未熟之玉.png',
+        name: '极寒之核',
+        image: '/image/item/极寒之核.png',
         rank: 4,
         count: 20
       },
       {
-        name: '夜泊石',
-        image: '/image/item/夜泊石.png',
+        name: '落落莓',
+        image: '/image/item/落落莓.png',
         rank: 1,
         count: 60
       },
       {
-        name: '攫金鸦印',
-        image: '/image/item/攫金鸦印.png',
+        name: '尉官的徽记',
+        image: '/image/item/尉官的徽记.png',
         rank: 3,
         count: 24
       }
@@ -261,14 +261,14 @@ export default {
       },
       {
         name: '生命值',
-        value: 8705
+        value: 11438
       },
       {
         name: '防御力',
-        value: 546
+        value: 661
       },
       {
-        name: '火元素伤害加成',
+        name: '攻击力(百分比)',
         value: '24.0%'
       }
     ]
@@ -283,14 +283,14 @@ export default {
       },
       {
         name: '生命值',
-        value: 9352
+        value: 12289
       },
       {
         name: '防御力',
-        value: 578
+        value: 710
       },
       {
-        name: '火元素伤害加成',
+        name: '攻击力(百分比)',
         value: '24.0%'
       }
     ]
