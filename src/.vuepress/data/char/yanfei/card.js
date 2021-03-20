@@ -1,7 +1,7 @@
 // 角色资料卡数据
 
 export default {
-  avatar: '/image/char/avatar/Eula.png', // 头像链接
+  avatar: '/image/char/avatar/Yanfei.png', // 头像链接
   name: '烟绯', // 角色名称
   prefix: '智明无邪', // 角色称号
   by: '璃月港', // 所属

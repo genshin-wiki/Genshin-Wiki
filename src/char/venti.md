@@ -15,7 +15,6 @@ keywords:
   - 愿风神忽悠你
 description: '蒙德城诸多吟游诗人中的一位，自由自在地穿行在街头巷尾。'
 image: '/image/char/avatar/Venti.png'
-background: '/image/char/pic/venti/official.png'
 ---
 
 ## 信息

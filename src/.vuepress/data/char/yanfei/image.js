@@ -3,6 +3,6 @@
 export default [
   {
     title: '抽卡立绘',
-    image: '/image/char/gachaimg/UI_Gacha_AvatarImg_Yanfei.png'
+    image: '/image/char/gachaimg/UI_Gacha_AvatarImg_Feiyan(Beta).png'
   }
 ]

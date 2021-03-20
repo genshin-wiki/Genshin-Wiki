@@ -19,7 +19,6 @@ keywords:
   - 大丘丘病了二丘丘瞧
 description: '「往生堂」七十七代堂主，年纪轻轻就已主掌璃月的葬仪事务。'
 image: '/image/char/avatar/Hutao.png'
-background: '/image/char/pic/hutao/official.png'
 ---
 
 ## 信息
