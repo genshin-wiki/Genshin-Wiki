@@ -29,6 +29,10 @@ image: '/image/char/avatar/Hutao.png'
 
 <char-image name="hutao"/>
 
+## 等级
+
+<char-level name="hutao"/>
+
 ## 天赋
 
 <char-talent name="hutao"/>

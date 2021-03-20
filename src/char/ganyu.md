@@ -25,6 +25,10 @@ image: '/image/char/avatar/Ganyu.png'
 
 <char-image name="ganyu"/>
 
+## 等级
+
+<char-level name="ganyu"/>
+
 ## 天赋
 
 <char-talent name="ganyu"/>
