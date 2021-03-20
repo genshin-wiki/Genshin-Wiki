@@ -2,7 +2,7 @@
 title: 甘雨
 categories:
   - 角色
-  - 璃月港
+  - 璃月
   - 冰
   - 五星
 keywords:
@@ -15,6 +15,7 @@ keywords:
   - 工作
 description: '月海亭的秘书，体内流淌着仙兽「麒麟」的血脉。'
 image: '/image/char/avatar/Ganyu.png'
+background: '/image/char/pic/ganyu/official.png'
 ---
 
 ## 信息

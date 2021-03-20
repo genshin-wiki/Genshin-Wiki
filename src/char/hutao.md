@@ -2,7 +2,7 @@
 title: 胡桃
 categories:
   - 角色
-  - 璃月港
+  - 璃月
   - 火
   - 五星
 keywords:
@@ -19,6 +19,7 @@ keywords:
   - 大丘丘病了二丘丘瞧
 description: '「往生堂」七十七代堂主，年纪轻轻就已主掌璃月的葬仪事务。'
 image: '/image/char/avatar/Hutao.png'
+background: '/image/char/pic/hutao/official.png'
 ---
 
 ## 信息

@@ -109,15 +109,40 @@ export default {
   },
   data() {
     return {
-      data: {}
+      data: {
+        style: {}
+      }
     }
   },
   created() {
     const result = require(`../../data/char/${this.name}/card`)
     this.data = result.default
+  },
+  mounted() {
+    const img = this.$page.frontmatter.background
+    this.style = document.createElement('style')
+    const css = document.createTextNode(`body:before { background: url('${this.$baseURL}${img}') center/cover;}`)
+    this.style.appendChild(css)
+    document.head.appendChild(this.style)
+  },
+  destroyed() {
+    this.style.remove()
   }
 }
 </script>
+
+<style>
+body:before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.2;
+  z-index: -1;
+  content: '';
+  position: fixed;
+}
+</style>
 
 <style lang="scss" scoped>
 table td {

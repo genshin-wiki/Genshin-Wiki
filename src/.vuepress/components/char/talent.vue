@@ -3,7 +3,9 @@
     <el-tabs v-model="activeName">
       <el-tab-pane v-for="(item, key) in data.data" :label="item.title" :key="'char-talent-' + key" :name="'char-talent-' + key">
         <div class="char-talent-image">
-          <img :class="data.element" :src="$baseURL + item.image" />
+          <div :class="'background ' + data.element">
+            <img class="image" :src="$baseURL + item.image" />
+          </div>
         </div>
         <div class="char-talent-desc" v-for="(desc, descKey) in item.desc" :key="'char-talent-desc-' + descKey" v-html="getDesc(desc)"></div>
         <char-talent-table v-if="item.data != null" :data="item.data" />
@@ -57,35 +59,40 @@ export default {
 
 <style lang="scss" scoped>
 .char-talent-image {
-  .base {
-    border-radius: 50%;
-    margin-bottom: 20px;
+  .background {
     width: 100px;
     height: 100px;
+    position: relative;
+    border-radius: 50%;
+    margin-bottom: 20px;
+  }
+  .image {
+    width: auto;
+    height: auto;
+    max-width: 80%;
+    max-height: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
   .pyro {
-    @extend .base;
-    background: #ff9999;
+    background: rgba($color: #ff9999, $alpha: 0.7);
   }
   .hydro {
-    @extend .base;
-    background: #80c0ff;
+    background: rgba($color: #80c0ff, $alpha: 0.7);
   }
   .geo {
-    @extend .base;
-    background: #ffe699;
+    background: rgba($color: #ffe699, $alpha: 0.7);
   }
   .electro {
-    @extend .base;
-    background: #ffacff;
+    background: rgba($color: #ffacff, $alpha: 0.7);
   }
   .cyro {
-    @extend .base;
-    background: #4be1ff;
+    background: rgba($color: #90ecfe, $alpha: 0.7);
   }
   .ameno {
-    @extend .base;
-    background: #80ffd7;
+    background: rgba($color: #80ffd7, $alpha: 0.7);
   }
 }
 .char-talent-desc {

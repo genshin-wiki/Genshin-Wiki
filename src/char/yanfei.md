@@ -2,7 +2,7 @@
 title: 烟绯
 categories:
   - 角色
-  - 璃月港
+  - 璃月
   - 火
   - 四星
 keywords:

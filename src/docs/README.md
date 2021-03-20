@@ -2,6 +2,7 @@
 title: 帮助文档
 description: '原神百科帮助文档'
 image: '/image/logo.png'
+sticky: 1
 ---
 
 ## 克隆项目
