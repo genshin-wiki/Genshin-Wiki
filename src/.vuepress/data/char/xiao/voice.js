@@ -1,6 +1,6 @@
 // 角色语音数据
 
-[
+export default [
   {
     title: '初次见面...', //  标题
     voice: '/voice/char/xiao/1000_{lang}.mp3',// 语音
