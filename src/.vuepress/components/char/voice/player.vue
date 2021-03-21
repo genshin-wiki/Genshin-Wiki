@@ -28,7 +28,7 @@
 <script>
 export default {
   props: {
-    voice: Object
+    voice: String
   },
   data() {
     return {
@@ -52,7 +52,7 @@ export default {
         this.reset()
         this.icon[region] = 'el-icon-video-pause'
         this.playing[region] = true
-        this.$emit('play', this.$baseURL + this.voice[region])
+        this.$emit('play', this.$baseURL + this.voice.replace(/\{lang\}/g, region))
       } else {
         this.icon[region] = 'el-icon-video-play'
         this.playing[region] = false
