@@ -31,11 +31,9 @@ module.exports = {
     ]
   },
   plugins: [
-    /*
     [
       require('../../plugin/vuepress-plugin-live2d')
     ],
-    */
     [
       '@vuepress/last-updated',
       {
@@ -54,7 +52,6 @@ module.exports = {
         },
         aplayer: {
           theme: '#0088ff',
-          autoplay: true,
           lrcType: 3,
           volume: 0.2
         }
