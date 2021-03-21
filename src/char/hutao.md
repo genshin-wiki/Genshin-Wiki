@@ -37,6 +37,10 @@ image: '/image/char/avatar/Hutao.png'
 
 <char-talent name="hutao"/>
 
+## 命之座
+
+<char-constell name="hutao"/>
+
 ## 故事
 
 <char-story name="hutao"/>
