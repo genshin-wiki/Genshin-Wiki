@@ -24,7 +24,7 @@ export default {
     },
     {
       title: "获麟",
-      image: "/image/char/talent/	UI_Talent_S_Ganyu_02.png",
+      image: "/image/char/talent/UI_Talent_S_Ganyu_02.png",
       desc: [
         '<bold>山泽麟迹</bold>的可使用次数增加1次'
       ]
