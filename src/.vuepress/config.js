@@ -45,6 +45,22 @@ module.exports = {
       }
     ],
     [
+      'meting',
+      {
+        meting: {
+          server: 'netease',
+          type: 'playlist',
+          mid: '6672618909'
+        },
+        aplayer: {
+          theme: '#0088ff',
+          autoplay: true,
+          lrcType: 3,
+          volume: 0.2
+        }
+      }
+    ],
+    [
       'dynamic-title',
       {
         showText: '(/≧▽≦/)咦！又好了！',
