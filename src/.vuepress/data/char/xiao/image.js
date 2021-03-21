@@ -7,7 +7,7 @@ export default [
   },
   {
     title: '立绘',
-    image: '/image/char/pic/xiao/tachie.png'
+    image: '/image/char/pic/xiao/tachie.jpg'
   },
   {
     title: '抽卡立绘',
