@@ -60,8 +60,8 @@ module.exports = {
     [
       'dynamic-title',
       {
-        showText: '(/≧▽≦/)咦！又好了！',
-        hideText: '(●—●)喔哟，崩溃啦！',
+        showText: '(/≧▽≦/)派蒙已经变成应急食品了！ ',
+        hideText: '(●—●)旅行者！快回来，派蒙要不行了！',
         recoverTime: 2000,
       }
     ],
