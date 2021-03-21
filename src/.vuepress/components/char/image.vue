@@ -1,11 +1,9 @@
 <template>
-  <div>
-    <el-tabs v-model="activeName">
-      <el-tab-pane v-for="(item, key) in data" :label="item.title" :key="'char-iaage-' + key" :name="'char-image-' + key">
-        <img :src="$baseURL + item.image" />
-      </el-tab-pane>
-    </el-tabs>
-  </div>
+  <el-tabs v-model="activeName">
+    <el-tab-pane v-for="(item, key) in data" :label="item.title" :key="'char-iaage-' + key" :name="'char-image-' + key">
+      <img :src="$baseURL + item.image" />
+    </el-tab-pane>
+  </el-tabs>
 </template>
 
 <script>

@@ -33,6 +33,10 @@ image: '/image/char/avatar/Ganyu.png'
 
 <char-talent name="ganyu"/>
 
+## 命之座
+
+<char-constell name="ganyu"/>
+
 ## 故事
 
 <char-story name="ganyu"/>
