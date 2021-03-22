@@ -46,6 +46,7 @@ module.exports = {
     [
       'meting',
       {
+        metingApi: 'https://meting.zhenxin.xyz',
         meting: {
           server: 'netease',
           type: 'playlist',
