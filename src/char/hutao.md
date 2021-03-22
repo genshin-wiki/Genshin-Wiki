@@ -5,7 +5,7 @@ categories:
   - 璃月
   - 火
   - 五星
-keywords:
+tags:
   - 往生堂
   - 送走
   - 道家结印

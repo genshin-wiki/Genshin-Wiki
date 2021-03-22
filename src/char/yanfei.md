@@ -5,7 +5,7 @@ categories:
   - 璃月
   - 火
   - 四星
-keywords:
+tags:
   - 火系
 description: '活跃在璃月港的知名律法咨询师，混有仙兽血脉的精明少女。'
 image: '/image/char/avatar/Yanfei.png'

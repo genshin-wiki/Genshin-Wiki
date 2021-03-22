@@ -6,7 +6,7 @@ export default ({ Vue, router }) => {
   if (env && env == 'development') {
     baseURL = 'http://localhost:8849'
   } else {
-    baseURL = 'https://static.ys.zhenxin.xyz'
+    baseURL = 'https://genshin-wiki.gitee.io'
   }
   Vue.prototype.$baseURL = baseURL
   Vue.mixin({

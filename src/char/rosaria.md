@@ -5,7 +5,7 @@ categories:
   - 蒙德
   - 冰
   - 四星
-keywords:
+tags:
   - 冰系
 description: '除了打扮哪里都不像神职人员的修女，冷淡的言行中透着锐利，总是单独行动。'
 image: '/image/char/avatar/Rosaria.png'

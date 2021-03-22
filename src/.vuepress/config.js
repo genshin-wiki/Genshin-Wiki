@@ -14,6 +14,7 @@ module.exports = {
   },
   theme: 'reco',
   themeConfig: {
+    noFoundPageByTencent: false,
     type: 'blog',
     lastUpdated: '最后更新',
     docsRepo: 'Genshin-Wiki/Genshin-Wiki',
@@ -89,7 +90,7 @@ module.exports = {
           const { $page } = context
           const categories = $page.frontmatter.categories
           const title = $page.title
-          const keywords = $page.frontmatter.keywords
+          const keywords = $page.frontmatter.tags
           let result = '原神wiki,原神攻略,原神资料,原神,原神百科,Genshin,Genshin Wiki,'
           if (categories) {
             result = result + categories + ','
