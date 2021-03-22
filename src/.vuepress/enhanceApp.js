@@ -31,8 +31,7 @@ export default ({ Vue, router }) => {
       }
     }
   })
-  console.log('====================================')
-  console.log('Genshin Wiki By ZhenXin')
-  console.log('Github: https://github.com/Genshin-Wiki/Genshin-Wiki')
-  console.log('====================================')
+  const color = "color:#fff; background: linear-gradient(to right , #08f, #6cf); padding:3px; border-radius: 3px;"
+  console.log("%c Genshin Wiki By ZhenXin ", color)
+  console.log('%c Github: Genshin-Wiki/Genshin-Wiki ', color)
 };

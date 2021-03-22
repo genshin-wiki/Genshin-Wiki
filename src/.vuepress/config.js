@@ -4,7 +4,8 @@ module.exports = {
   port: 8848,
   head: [
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }],
-    ['script', { src: 'https://cdn.zhenxin.xyz/static/js/autoGray.js' }]
+    ['script', { src: 'https://cdn.zhenxin.xyz/static/js/autoGray.js' }],
+    ['script', { src: 'https://cdn.jsdelivr.net/npm/colorthief@2.0.2/dist/color-thief.min.js' }]
   ],
   locales: {
     '/': {
@@ -51,9 +52,11 @@ module.exports = {
           mid: '6672618909'
         },
         aplayer: {
-          theme: '#0088ff',
+          theme: 'pic',
           lrcType: 3,
-          volume: 0.2
+          volume: 0.2,
+          fixed: true,
+          mini: true
         }
       }
     ],
@@ -62,7 +65,7 @@ module.exports = {
       {
         showText: '(/≧▽≦/)派蒙已经变成应急食品了！ ',
         hideText: '(●—●)旅行者！快回来，派蒙要不行了！',
-        recoverTime: 2000,
+        recoverTime: 2000
       }
     ],
     [
