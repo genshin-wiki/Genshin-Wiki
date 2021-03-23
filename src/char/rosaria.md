@@ -31,6 +31,10 @@ image: '/image/char/avatar/Rosaria.png'
 
 <char-talent name="rosaria"/>
 
+## 命之座
+
+<char-constell name="rosaria"/>
+
 ## 故事
 
 <char-story name="rosaria"/>
