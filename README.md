@@ -37,15 +37,20 @@ your programs, too.
 
 ## 鸣谢
 
-[![icon][vuepress]][vuepress-link] [![icon][vuepress-star]][vuepress-star-link]
+排名不分先后
 
-[![icon][vuepress-theme-reco]][vuepress-theme-reco-link] [![icon][vuepress-theme-reco-star]][vuepress-theme-reco-star-link]
+- [vuejs/vuepress][vuepress]
+- [vue-reco/vuepress-theme-reco][vuepress-theme-reco]
+- [moefyit/vuepress-plugin-dynamic-title][vuepress-plugin-dynamic-title]
+- [moefyit/vuepress-plugin-meting][vuepress-plugin-meting]
+- [lorisleiva/vuepress-plugin-seo][vuepress-plugin-seo]
+- [ekoeryanto/vuepress-plugin-sitemap][vuepress-plugin-sitemap]
+- [ElemeFE/element][element-ui]
 
-[vuepress]: https://badgen.net/badge/vuepress/MIT/green
-[vuepress-link]: https://vuepress.vuejs.org/
-[vuepress-star]: https://badgen.net/github/stars/vuejs/vuepress
-[vuepress-star-link]: https://github.com/vuejs/vuepress
-[vuepress-theme-reco]: https://badgen.net/badge/vuepress-theme-reco/MIT/green
-[vuepress-theme-reco-link]: https://vuepress-theme-reco.recoluan.com/
-[vuepress-theme-reco-star]: https://badgen.net/github/stars/vue-reco/vuepress-theme-reco
-[vuepress-theme-reco-star-link]: https://github.com/vue-reco/vuepress-theme-reco
+[vuepress]: https://github.com/vuejs/vuepress
+[vuepress-theme-reco]: https://github.com/vue-reco/vuepress-theme-reco
+[vuepress-plugin-dynamic-title]: https://github.com/moefyit/vuepress-plugin-dynamic-title
+[vuepress-plugin-meting]: https://github.com/moefyit/vuepress-plugin-meting
+[vuepress-plugin-seo]: https://github.com/lorisleiva/vuepress-plugin-seo
+[vuepress-plugin-sitemap]: https://github.com/ekoeryanto/vuepress-plugin-sitemap
+[element-ui]: https://github.com/ElemeFE/element
