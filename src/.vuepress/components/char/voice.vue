@@ -2,7 +2,9 @@
   <div>
     <el-tabs v-model="activeName">
       <el-tab-pane v-for="(item, key) in data" :label="item.title" :key="'char-voice-' + key" :name="'char-voice-' + key">
-        <span>{{ item.content }}</span>
+        <div v-for="(content, k) in item.content" :key="'char-voice-' + key + '-content' + k">
+          <span>{{ content }}</span>
+        </div>
         <char-voice-player @play="play" @pause="pause" :voice="item.voice" />
       </el-tab-pane>
     </el-tabs>

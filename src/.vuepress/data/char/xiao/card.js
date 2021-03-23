@@ -11,7 +11,7 @@ export default {
   weapon: '长柄武器', // 武器类型
   cv: { // CV列表
     cn: 'kinsen', // 中配
-    jp: '上松冈祯丞', // 日配
+    jp: '松冈祯丞', // 日配
     en: 'Laila Berzins', // 英配
     kr: '심규혁' // 韩配
   },
