@@ -57,8 +57,7 @@ module.exports = {
           theme: 'pic',
           lrcType: 3,
           volume: 0.2,
-          fixed: true,
-          mini: true
+          order: 'random'
         }
       }
     ],
