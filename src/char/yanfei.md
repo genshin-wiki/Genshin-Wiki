@@ -31,6 +31,10 @@ image: '/image/char/avatar/Yanfei.png'
 
 <char-talent name="yanfei"/>
 
+## 命之座
+
+<char-constell name="yanfei"/>
+
 ## 故事
 
 <char-story name="yanfei"/>
