@@ -29,6 +29,10 @@ image: '/image/char/avatar/Xiao.png'
 
 <char-talent name="xiao"/>
 
+## 命之座
+
+<char-constell name="xiao"/>
+
 ## 故事
 
 <char-story name="xiao"/>

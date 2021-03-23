@@ -33,6 +33,10 @@ image: '/image/char/avatar/Venti.png'
 
 <char-talent name="venti"/>
 
+## 命之座
+
+<char-constell name="venti"/>
+
 ## 故事
 
 <char-story name="venti"/>
