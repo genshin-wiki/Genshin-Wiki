@@ -11,7 +11,6 @@ tags:
   - 王小美
   - 咕噜下山真君
   - 椰羊
-  - '996'
   - 工作
 description: '月海亭的秘书，体内流淌着仙兽「麒麟」的血脉。'
 image: '/image/char/avatar/Ganyu.png'

@@ -22,13 +22,27 @@ export default {
   },
   data() {
     return {
-      data: [],
+      data: {
+        element: '', // 元素
+        data: [
+          {
+            title: '',
+            image: '',
+            desc: [''],
+            data: ['']
+          }
+        ]
+      },
       activeName: 'char-talent-0'
     }
   },
-  created() {
-    const result = require(`../../data/char/${this.name}/talent.js`)
-    this.data = result.default
+  async created() {
+    const result = await this.$http.get(`/char/${this.name}/talent`)
+    if (result.code == 200) {
+      this.data = result.data
+    } else {
+      this.$message.error(`请求错误: (${result.code})${result.msg}`)
+    }
   },
   methods: {
     getDesc

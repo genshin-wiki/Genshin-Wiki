@@ -1,38 +1,39 @@
 <template>
-  <el-tabs v-model="activeName">
-    <el-tab-pane v-for="(item, key) in data.data" :label="item.title" :key="'char-constell-' + key" :name="'char-constell-' + key">
-      <div class="char-element-image">
-        <div :class="'background ' + data.element">
-          <img class="image" :src="$baseURL + item.image" />
-        </div>
-      </div>
-      <div class="char-element-desc" v-for="(desc, descKey) in item.desc" :key="'char-constell-desc-' + descKey" v-html="getDesc(desc)"></div>
-    </el-tab-pane>
-  </el-tabs>
+  <div>
+    <char-constell-tab v-if="single" :data="data" />
+    <el-tabs v-else v-model="activeName">
+      <el-tab-pane v-for="(item, index) in data" :label="item.title" :key="'char-constell-multi-' + index" :name="'char-constell-multi-' + index">
+        <char-constell-tab :data="item" />
+      </el-tab-pane>
+    </el-tabs>
+  </div>
 </template>
 
 <script>
-import { getDesc } from '../../common/utils'
 export default {
   props: {
     name: String
   },
   data() {
     return {
-      data: [],
-      activeName: 'char-constell-0'
+      data: [
+        {
+          title: '',
+          image: '',
+          desc: ['']
+        }
+      ],
+      activeName: '',
+      single: true
     }
   },
-  created() {
-    const result = require(`../../data/char/${this.name}/constell`)
-    this.data = result.default
-  },
-  methods: {
-    getDesc
+  async created() {
+    const result = await this.$http.get(`/char/${this.name}/constell`)
+    if (result.code == 200) {
+      this.data = result.data
+    } else {
+      this.$message.error(`请求错误: (${result.code})${result.msg}`)
+    }
   }
 }
 </script>
-
-<style lang="scss" scoped>
-@import '../../styles/common/element-desc.scss';
-</style>

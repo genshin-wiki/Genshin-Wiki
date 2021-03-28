@@ -52,13 +52,31 @@ export default {
   },
   data() {
     return {
-      data: {},
+      data: {
+        desc: [''], // 角色详细
+        story1: [''], // 角色故事1
+        story2: [''], // 角色故事2
+        story3: [''], // 角色故事3
+        story4: [''], // 角色故事4
+        story5: [''], // 角色故事5
+        special: {
+          // 角色特殊故事
+          title: '', // 标题
+          data: [''] // 内容
+        },
+        vision: [''] // 神之眼
+      },
       activeName: 'desc'
     }
   },
-  created() {
-    const result = require(`../../data/char/${this.name}/story`)
-    this.data = result.default
+  async created() {
+    const result = await this.$http.get(`/char/${this.name}/story`)
+
+    if (result.code == 200) {
+      this.data = result.data
+    } else {
+      this.$message.error(`请求错误: (${result.code})${result.msg}`)
+    }
   }
 }
 </script>

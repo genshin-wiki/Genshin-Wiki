@@ -1,4 +1,6 @@
-import Element from 'element-ui';
+import Element from 'element-ui'
+import VueCookies from 'vue-cookies'
+import {http} from './common/utils'
 import './element-theme/index.css'
 export default ({ Vue, router }) => {
   const env = process.env.NODE_ENV
@@ -17,7 +19,10 @@ export default ({ Vue, router }) => {
     },
   })
 
+  Vue.prototype.$http = http
+
   Vue.use(Element);
+  Vue.use(VueCookies)
   Vue.directive('table-drag', {
     inserted: function (el) {
       const table = el.querySelector('table')

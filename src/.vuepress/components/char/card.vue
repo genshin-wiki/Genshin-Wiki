@@ -1,5 +1,5 @@
 <template>
-  <div class="main">
+  <div>
     <img class="char-card-avatar" :src="$baseURL + data.avatar" />
     <el-tabs>
       <el-tab-pane label="角色资料">
@@ -107,9 +107,48 @@ export default {
   props: {
     name: String
   },
-  created() {
-    const result = require(`../../data/char/${this.name}/card`)
-    this.data = result.default
+  data() {
+    return {
+      data: {
+        avatar: '', // 头像链接
+        name: '', // 角色名称
+        prefix: '', // 角色称号
+        by: '', // 所属
+        rank: 0, // 星级
+        element: '', // 元素(神之眼)
+        constell: '', // 命之座
+        weapon: '', // 武器类型
+        cv: {
+          // CV列表
+          cn: '', // 中配
+          jp: '', // 日配
+          en: '', // 英配
+          kr: '' // 韩配
+        },
+        desc: '', // 角色简介
+        attributes: {
+          // 基础属性
+          attackType: '', // 攻击类型
+          hp: 0, // 生命值
+          attack: 0, // 攻击力
+          defense: 0, // 防御力
+          proficient: 0, // 元素精通
+          critRate: '', // 暴击率
+          critDamage: '', // 暴击伤害
+          heal: '', // 治疗加成
+          healMe: '', // 受治疗加成
+          recharge: '' // 元素充能效率
+        }
+      }
+    }
+  },
+  async created() {
+    const result = await this.$http.get(`/char/${this.name}/card`)
+    if (result.code == 200) {
+      this.data = result.data
+    } else {
+      this.$message.error(`请求错误: (${result.code})${result.msg}`)
+    }
   }
 }
 </script>

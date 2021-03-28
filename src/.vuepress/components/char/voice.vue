@@ -18,14 +18,24 @@ export default {
   },
   data() {
     return {
-      data: [],
+      data: [
+        {
+          title: '', // 标题
+          voice: '', // 语音
+          content: [''] // 内容
+        }
+      ],
       activeName: 'char-voice-0',
       audio: undefined
     }
   },
-  created() {
-    const result = require(`../../data/char/${this.name}/voice`)
-    this.data = result.default
+  async created() {
+    const result = await this.$http.get(`/char/${this.name}/voice`)
+    if (result.code == 200) {
+      this.data = result.data
+    } else {
+      this.$message.error(`请求错误: (${result.code})${result.msg}`)
+    }
     if (typeof Audio != 'undefined') {
       this.audio = new Audio()
     }

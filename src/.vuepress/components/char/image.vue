@@ -1,9 +1,13 @@
 <template>
-  <el-tabs v-model="activeName">
-    <el-tab-pane v-for="(item, key) in data" :label="item.title" :key="'char-iaage-' + key" :name="'char-image-' + key">
-      <img :src="$baseURL + item.image" />
-    </el-tab-pane>
-  </el-tabs>
+  <el-main class="gw-loading" element-loading-background="rgba(0, 0, 0, 0)" v-loading="!isOK">
+    <div v-if="isOK">
+      <el-tabs v-model="activeName">
+        <el-tab-pane v-for="(item, key) in data" :label="item.title" :key="'char-iaage-' + key" :name="'char-image-' + key">
+          <img :src="$baseURL + item.image" />
+        </el-tab-pane>
+      </el-tabs>
+    </div>
+  </el-main>
 </template>
 
 <script>
@@ -13,16 +17,25 @@ export default {
   },
   data() {
     return {
-      data: [],
+      data: [
+        {
+          title: '', // 图片名称
+          image: '' // 图片链接
+        }
+      ],
       activeName: 'char-image-0',
-      style: {}
+      style: {},
+      isOK: false
     }
   },
-  created() {
-    const result = require(`../../data/char/${this.name}/image.js`)
-    this.data = result.default
-  },
-  mounted() {
+  async mounted() {
+    const result = await this.$http.get(`/char/${this.name}/image`)
+    if (result.code == 200) {
+      this.data = result.data
+      this.isOK = true
+    } else {
+      this.$message.error(`请求错误: (${result.code})${result.msg}`)
+    }
     const img = this.$baseURL + this.data[0].image
     this.style = document.createElement('style')
     const css = document.createTextNode(`body:before { background: url('${img}') center/cover;}`)

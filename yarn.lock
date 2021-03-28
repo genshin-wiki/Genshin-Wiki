@@ -8364,6 +8364,11 @@ vue-click-outside@1.1.0:
   resolved "https://registry.npm.taobao.org/vue-click-outside/download/vue-click-outside-1.1.0.tgz#48b7680b518923e701643cccb3e165854aad99eb"
   integrity sha1-SLdoC1GJI+cBZDzMs+FlhUqtmes=
 
+vue-cookies@^1.7.4:
+  version "1.7.4"
+  resolved "https://registry.npm.taobao.org/vue-cookies/download/vue-cookies-1.7.4.tgz?cache=0&sync_timestamp=1598941352058&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-cookies%2Fdownload%2Fvue-cookies-1.7.4.tgz#d241d0a0431da0795837651d10b4d73e7c8d3e8d"
+  integrity sha1-0kHQoEMdoHlYN2UdELTXPnyNPo0=
+
 vue-demi@^0.5.3:
   version "0.5.4"
   resolved "https://registry.npm.taobao.org/vue-demi/download/vue-demi-0.5.4.tgz#cedb887af819ff0126c545a5540170d8895b816d"
