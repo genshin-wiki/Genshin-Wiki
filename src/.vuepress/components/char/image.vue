@@ -1,6 +1,6 @@
 <template>
-  <el-main class="gw-loading" element-loading-background="rgba(0, 0, 0, 0)" v-loading="!isOK">
-    <div v-if="isOK">
+  <el-main :class="isOK.class" element-loading-background="rgba(0, 0, 0, 0)" v-loading="!isOK">
+    <div v-if="isOK.isOK">
       <el-tabs v-model="activeName">
         <el-tab-pane v-for="(item, key) in data" :label="item.title" :key="'char-iaage-' + key" :name="'char-image-' + key">
           <img :src="$baseURL + item.image" />
@@ -25,14 +25,18 @@ export default {
       ],
       activeName: 'char-image-0',
       style: {},
-      isOK: false
+      isOK: {
+        isOK: false,
+        class: 'gw-loading'
+      }
     }
   },
   async mounted() {
     const result = await this.$http.get(`/char/${this.name}/image`)
     if (result.code == 200) {
       this.data = result.data
-      this.isOK = true
+      this.isOK.isOK = true
+      this.isOK.class = ''
     } else {
       this.$message.error(`请求错误: (${result.code})${result.msg}`)
     }
