@@ -11,10 +11,6 @@ description: '除了打扮哪里都不像神职人员的修女，冷淡的言行
 image: '/image/char/avatar/Rosaria.png'
 ---
 
-::: danger
-**以下为测试服内容，仅供参考，请以正式上线数据为准！**
-:::
-
 ## 信息
 
 <char-card name="rosaria"/>
