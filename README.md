@@ -1,16 +1,13 @@
 # Genshin Wiki
 
-## 简介
+This project move to(此项目已移动至):
 
-使用 vuepress 搭建的现代化原神百科程序
+* [Web/前端](https://github.com/genshin-wiki/gw-web)
+* [Data/数据](https://github.com/genshin-wiki/gw-data)
+* [App/应用](https://github.com/genshin-wiki/gw-app)
 
-## 贡献
 
-编辑或新建词条请参考
-
-[帮助文档](src/docs/README.md)
-
-## 协议
+## 开源协议
 
 ```license
                     GNU GENERAL PUBLIC LICENSE
@@ -34,23 +31,3 @@ GNU General Public License for most of our software; it applies also to
 any other work released this way by its authors.  You can apply it to
 your programs, too.
 ```
-
-## 鸣谢
-
-排名不分先后
-
-- [vuejs/vuepress][vuepress]
-- [vue-reco/vuepress-theme-reco][vuepress-theme-reco]
-- [moefyit/vuepress-plugin-dynamic-title][vuepress-plugin-dynamic-title]
-- [moefyit/vuepress-plugin-meting][vuepress-plugin-meting]
-- [lorisleiva/vuepress-plugin-seo][vuepress-plugin-seo]
-- [ekoeryanto/vuepress-plugin-sitemap][vuepress-plugin-sitemap]
-- [ElemeFE/element][element-ui]
-
-[vuepress]: https://github.com/vuejs/vuepress
-[vuepress-theme-reco]: https://github.com/vue-reco/vuepress-theme-reco
-[vuepress-plugin-dynamic-title]: https://github.com/moefyit/vuepress-plugin-dynamic-title
-[vuepress-plugin-meting]: https://github.com/moefyit/vuepress-plugin-meting
-[vuepress-plugin-seo]: https://github.com/lorisleiva/vuepress-plugin-seo
-[vuepress-plugin-sitemap]: https://github.com/ekoeryanto/vuepress-plugin-sitemap
-[element-ui]: https://github.com/ElemeFE/element
